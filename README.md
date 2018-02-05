@@ -1,7 +1,7 @@
 # Adwidget
 Embeddable JavaScript advertising widget with customizable configurations.
 
-#Setup
+## Setup
 Download JavaScript file and add script tag:
 
 `<script src="adwidget.js" async></script>`
@@ -9,7 +9,7 @@ Include the following HTML where the ad will be displayed:
 
 `<div id="ireloWidget"></div>`
 
-#Configuration
+## Configuration
 In adwidget.js you may update the following options in widgetConfig:
 ```
 widgetConfig = {  
