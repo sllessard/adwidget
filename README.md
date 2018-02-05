@@ -10,7 +10,7 @@ Include HTML where the ad will be displayed:
 
 `<div id="ireloWidget"></div>`
 
-*The widget with center itself inside containter for #ireloWidget.
+*The widget with center itself inside containter for #ireloWidget.*
 
 ## Configuration
 adwidget.js can use the following settings:
