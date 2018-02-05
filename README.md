@@ -10,7 +10,7 @@ Include the following HTML where the ad will be displayed:
 `<div id="ireloWidget"></div>`
 
 ## Configuration
-adwidget.js use the following settings:
+adwidget.js can use the following settings:
 ```
 widgetConfig = {  
 adStyle: 'medium', //Options: leaderboard (728x90), medium(300x250)  
