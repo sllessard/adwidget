@@ -13,9 +13,9 @@ Include HTML where the ad will be displayed:
 *The widget with center itself inside containter for #ireloWidget.*
 
 ## Configuration
-adwidget.js can use the following settings:
+In adwidget.js widgetConfig can use the following settings:
 ```
-widgetConfig = {  
+let widgetConfig = {  
 adStyle: 'medium',  
 background: 'lightblue',
 successMessage: 'Thank you!'}
