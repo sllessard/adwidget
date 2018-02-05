@@ -12,7 +12,7 @@ Include the following HTML where the ad will be displayed:
 #Configuration
 In adwidget.js you may update the following options in widgetConfig:
 
-`wdigetConfig = {
-adStyle: 'medium', //Options: leaderboard (728x90), medium(300x250)
-background: 'lightblue', //Control widget background using css background shorthand
+`widgetConfig = {  
+adStyle: 'medium', //Options: leaderboard (728x90), medium(300x250)  
+background: 'lightblue', //Control widget background using css background shorthand  
 successMessage: 'Thank you!' //Customize the final thank you message displayed upon user submission}`
