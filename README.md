@@ -5,9 +5,11 @@ Embeddable JavaScript advertising widget with customizable configurations.
 Download JavaScript file and add script tag:
 
 `<script src="adwidget.js" async></script>`
-Include the following HTML where the ad will be displayed:
+
+Include HTML where the ad will be displayed:
 
 `<div id="ireloWidget"></div>`
+*The widget with center itself inside containter for #ireloWidget.
 
 ## Configuration
 adwidget.js can use the following settings:
