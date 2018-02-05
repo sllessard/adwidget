@@ -16,7 +16,10 @@ Include HTML where the ad will be displayed:
 adwidget.js can use the following settings:
 ```
 widgetConfig = {  
-adStyle: 'medium', //Options: leaderboard (728x90), medium(300x250)  
-background: 'lightblue', //Control widget background using css background shorthand  
-successMessage: 'Thank you!' //Customize the final thank you message displayed upon user submission}
+//leaderboard (728x90) or medium(300x250)
+adStyle: 'medium',  
+//CSS background shorthand 
+background: 'lightblue',
+//Final thank you message string
+successMessage: 'Thank you!'}
 ```
