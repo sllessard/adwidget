@@ -123,10 +123,12 @@
     let emailEntry = e.target[0].value;
     let telEntry = e.target[1].value;
     let telSubmit = telEntry.replace(/-/g, "");
+    let $accessUrl = 'https://www.example.com';
+    let $authKey = 'your authorization';
     let request = new XMLHttpRequest();
-    request.open('POST', 'https://valet.irelo.com/api/widget/auto/coop-embed', true);
+    request.open('POST', $accessUrl, true);
     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-    request.setRequestHeader('Authorization', '4d69e62f60ab-slessard');
+    request.setRequestHeader('Authorization', $authKey);
 
     if (emailEntry) {
       console.log('Email: ' + emailEntry);
