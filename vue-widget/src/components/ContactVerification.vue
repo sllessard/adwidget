@@ -1,42 +1,43 @@
 <template>
   <div id="verificationForm">
-    <p class="verificationForm__error" v-if="verificationError">Code entered does not match. Please try again or update contact information</p>
+    <p class="verificationForm__error" v-if="verificationError">
+      Code entered does not match. Please try again or update contact information
+    </p>
     <p>We sent a code to: {{ clientContact }}</p>
     <form @submit.prevent="checkVerificationCode">
       <input type="text" placeholder="Verification Code" v-model.lazy.trim="userVerificationString">
       <input type="submit" value="See Quote">
     </form>
     <button @click="returnToEntryForm">Change Contact Information</button>
-    <p id="forTest">Code for test purposes: {{ verificationString }}</p>
+    <p id="forTest">Code for test purposes: {{ verificationCode }}</p>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      verificationString: '1R3L0',
-      userVerificationString: '',
-      verificationError: false,
-    }
-  },
-  props: {
-    clientContact: String
-  },
-  methods: {
-    checkVerificationCode() {
-      if(this.verificationString === this.userVerificationString){
-        this.$emit('formVerified', true);
-      } else {
-        this.verificationError = true;
+  export default {
+    data() {
+      return {
+        userVerificationString: '',
+        verificationCode: '1R3L0',
+        verificationError: false
       }
     },
-    returnToEntryForm() {;
-      this.$emit('updateContact', false);
+    props: {
+      clientContact: String
+    },
+    methods: {
+      checkVerificationCode() {
+        if(this.verificationCode === this.userVerificationString){
+          this.$emit('formVerified', true);
+        } else {
+          this.verificationError = true;
+        }
+      },
+      returnToEntryForm() {;
+        this.$emit('updateContact', false);
+      }
     }
-  }
-}
-  
+  }  
 </script>
 
 <style lang="scss" scoped>
@@ -76,6 +77,5 @@ export default {
       margin: auto;
     }
 
-  }
-  
+  }  
 </style>

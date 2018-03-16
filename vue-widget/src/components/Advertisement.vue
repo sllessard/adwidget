@@ -10,7 +10,7 @@
     methods: {
       quotesRequested() {
         let nextStep = 2;
-        this.$emit('userRequestQuotes', nextStep);
+        this.$emit('userRequestQuotes', 'quote-request-form');
       }
     }
   }

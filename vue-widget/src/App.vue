@@ -1,35 +1,33 @@
 <template>
-  <div 
-      id="app" 
-      :class="config.adDimensions">
-    <advertisement 
-                    v-if="quoteStep === 1" 
+  <div id="app" :class="config.adDimensions">
+    <advertisement  v-if="quoteStep === 'advertisers-display'" 
                     @userRequestQuotes="quoteStep = $event">
-      <div class="transporter" slot="promotedBrands" v-for="transporter in transporters" >
+      <div  class="transporter" 
+            slot="promotedBrands" 
+            v-for="transporter in transporters" >
         <img class="logo" v-bind:src="transporter.src">
         <p class="description">{{ transporter.description }}</p>
       </div>
     </advertisement>
-    <user-input-form 
-                      v-if="quoteStep === 2" 
+    <user-input-form  v-if="quoteStep === 'quote-request-form'" 
                       @submissionSuccess="quoteStep = $event">              
     </user-input-form>
-    <p v-if="quoteStep === 3">{{ config.thankYouMessage }}</p>
+    <p v-if="quoteStep === 'confirmation-of-submission'">{{ config.thankYouMessage }}</p>
   </div>
 </template>
 
 <script>
-  import config from './config.js';
   import advertisement from './components/Advertisement.vue';
-  import contactForm from './components/ContactEntry.vue';
   import companies from './data/companies.js';
+  import config from './config.js';
+  import contactForm from './components/RequestForm.vue';
+
   export default {
     data () {
       return {
         config: config,
-        quoteStep: 1,
+        quoteStep: 'advertisers-display',
         transporters: companies,
-        submissionComplete: false,
       }
     },
     components: {
@@ -79,5 +77,4 @@ $backgroundColor: lightblue;
     padding: 2.5%;
   }
 }
-
 </style>
