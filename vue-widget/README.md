@@ -8,12 +8,15 @@ Adwidget.js rebuilt with Vue.js. Submission code verification added to widget.
 In HTML:
 
  `<div id="app"></div>`
+ 
 For production, after completing Build Setup step for production include build.js found in /dist:
 
  `<script src="build.js" async></script>`
 
 ## Configuration
-In src/config.js adDimensions and thankYouMessage can be set. Widget background is controlled in App.vue as a SCSS variable in <style>.
+In src/config.js adDimensions and thankYouMessage can be set.
+
+Widget background is controlled in App.vue as a SCSS variable in <style>.
   
 ## Build Setup
 
