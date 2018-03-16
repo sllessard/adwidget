@@ -6,8 +6,10 @@ Adwidget.js rebuilt with Vue.js. Submission code verification added to widget.
 
 ## Setup
 In HTML:
+
  `<div id="app"></div>`
 For production, after completing Build Setup step for production include build.js found in /dist:
+
  `<script src="build.js" async></script>`
 
 ## Configuration
