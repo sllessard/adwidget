@@ -78,7 +78,8 @@
           }
         })
         .catch(function(error){
-          console.log('Request Failed', error)
+          console.error('Request Failed', error);
+          alert('Submission could not complete. Please try again later.');
         });
       },
       checkSubmission() {
