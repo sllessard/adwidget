@@ -1,28 +1,34 @@
-# Adwidget
-Embeddable JavaScript advertising widget with customizable configurations.
+# vue-widget
+
+> Vue.js Ad Widget
+
+Adwidget.js rebuilt with Vue.js. Submission code verification added to widget.
 
 ## Setup
-Download JavaScript file and add script tag:
+In HTML:
 
-`<script src="adwidget.js" async></script>`
+ `<div id="app"></div>`
+ 
+For production, after completing Build Setup step for production include build.js found in /dist:
 
-Include HTML where the ad will be displayed:
-
-`<div id="ireloWidget"></div>`
-
-*The widget with center itself inside containter for #ireloWidget.*
+ `<script src="build.js" async></script>`
 
 ## Configuration
-In adwidget.js widgetConfig can use the following settings:
+In src/config.js adDimensions and thankYouMessage can be set.
+
+Widget background is controlled in App.vue as a SCSS variable in <style>.
+  
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
 ```
-let widgetConfig = {  
-adStyle: 'medium',  
-background: 'lightblue',
-successMessage: 'Thank you!'}
-```
-### adStyle
-Provides two settings for the widget format, medium rectangle (300x250) and leaderboard (728x90). 
-### background
-Using CSS background shorthand property the widget's base background can be modified.
-### successMessage
-The final success message displayed after the user has successfully submit their information can be modified to any string.
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

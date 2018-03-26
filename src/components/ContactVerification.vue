@@ -18,7 +18,7 @@
     data() {
       return {
         userVerificationString: '',
-        verificationCode: '1R3L0',
+        verificationCode: 'aq12',
         verificationError: false
       }
     },
