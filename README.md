@@ -1,6 +1,6 @@
 # Vue Ad Widget
 
-Ad template built in Vue.js. User request quotes and after entering contact information and verification code sees confirmation component.
+Ad template built in Vue.js, allowing user to request quotes and after entering contact information and verification code sees confirmation component that may include a quote or thank you message.
 
 ## Setup
 In HTML:
