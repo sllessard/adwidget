@@ -1,8 +1,8 @@
-# vue-widget
+# Vue Ad Widget
 
 > Vue.js Ad Widget
 
-Adwidget.js rebuilt with Vue.js. Submission code verification added to widget.
+Ad template built in Vue.js. User request quotes and after entering contact information and verification code sees confirmation component.
 
 ## Setup
 In HTML:
