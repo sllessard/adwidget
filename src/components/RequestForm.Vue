@@ -59,8 +59,8 @@
     },
     methods: {
       submitForm(){
-        const $accessUrl = 'https://valet.irelo.com/api/widget/auto/coop-embed';
-        const $authKey = '4d69e62f60ab-slessard';
+        const $accessUrl = 'Add-API-endpoint';
+        const $authKey = 'Add-API-accessKey';
 
         fetch($accessUrl, {
           method: 'post',
